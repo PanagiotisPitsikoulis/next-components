@@ -13,15 +13,10 @@
     "next-env.d.ts": true,
     "next.config.js": true,
     "package-lock.json": true,
-    "package.json": true,
     "postcss.config.js": true,
     "README.md": true,
     "tsconfig.json": true,
     "app/favicon.ico": true,
-    "node_modules": true,
-    ".next": true,
-    ".storybook": true,
-    "app": true,
     "previewConfig.json": true
   },
   "hide-files.files": [
@@ -32,17 +27,12 @@
     "next-env.d.ts",
     "next.config.js",
     "package-lock.json",
-    "package.json",
     "postcss.config.js",
     "README.md",
     "tsconfig.json",
     "app/favicon.ico",
-    "node_modules",
-    ".next",
-    ".storybook",
-    "app",
     "previewConfig.json"
   ],
   "cSpell.ignoreWords": ["autodocs"],
-  "cSpell.words": ["nextjs"]
+  "cSpell.words": ["clsx", "nextjs", "tailwindcss"]
 }

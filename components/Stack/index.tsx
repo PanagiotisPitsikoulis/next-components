@@ -1,16 +1,11 @@
 import React, { ReactNode } from "react";
-import classNames from "classnames";
-
-type StackProps = {
-  children: ReactNode;
-  dir?: "x" | "y";
-  gap?: "page" | "component" | "item";
-};
+import clsx from "clsx";
+import { StackProps } from "../ComponentTypes";
 
 function Stack({ children, dir = "x", gap = "component" }: StackProps) {
   return (
     <div
-      className={classNames(
+      className={clsx(
         "flex",
         { "flex-row": dir === "x" },
         { "flex-col": dir === "y" },

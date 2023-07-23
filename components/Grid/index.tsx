@@ -1,13 +1,6 @@
 import React, { ReactNode } from "react";
-import classNames from "classnames";
-
-type GridProps = {
-  children: ReactNode;
-  dimX?: 1 | 2 | 3 | 4;
-  dimY?: 1 | 2 | 3 | 4;
-  gap?: "page" | "component" | "item";
-  padding?: "component" | "page" | "item";
-};
+import clsx from "clsx";
+import { GridProps } from "../ComponentTypes";
 
 function Grid({
   children,
@@ -18,7 +11,7 @@ function Grid({
 }: GridProps) {
   return (
     <div
-      className={classNames(
+      className={clsx(
         { "md:grid-rows1": dimX === 1 },
         { "md:grid-rows-2": dimX === 2 },
         { "md:grid-rows-3": dimX === 3 },

@@ -1,14 +1,10 @@
-import classNames from "classnames";
-
-type SpacerProps = {
-  dir: "x" | "y";
-  margin?: "none" | "page" | "component" | "item";
-};
+import clsx from "clsx";
+import { SpacerProps } from "../ComponentTypes";
 
 function Spacer({ dir = "x", margin = "none" }: SpacerProps) {
   return (
     <div
-      className={classNames(
+      className={clsx(
         { "w-px h-px": dir === "x" },
         { "w-px h-px": dir === "y" },
         { "my-page": margin === "page" && dir === "y" },

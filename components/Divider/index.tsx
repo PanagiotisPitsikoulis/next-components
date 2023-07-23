@@ -1,14 +1,10 @@
-import classNames from "classnames";
-
-type DividerProps = {
-  dir: "x" | "y";
-  margin?: "none" | "page" | "component" | "item";
-};
+import clsx from "clsx";
+import { DividerProps } from "../ComponentTypes";
 
 function Divider({ dir = "x", margin = "none" }: DividerProps) {
   return (
     <div
-      className={classNames(
+      className={clsx(
         { "w-full h-px": dir === "x" },
         "bg-base-300",
         { "w-px h-full": dir === "y" },
