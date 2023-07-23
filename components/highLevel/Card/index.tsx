@@ -1,10 +1,6 @@
 import React, { ReactNode } from "react";
 import classNames from "classnames";
-import Container from "@/components/lowLevel/ui/Container";
-import Divider from "@/components/lowLevel/ui/Divider";
-import Stack from "@/components/lowLevel/layout/Stack";
-import Spacer from "@/components/lowLevel/ui/Spacer";
-import Grid from "@/components/lowLevel/layout/Grid";
+import { Grid, Spacer, Stack, Divider, Container } from "../../lowLevel";
 
 type CardProps = {
   children: ReactNode;
@@ -21,7 +17,7 @@ function Label({ children, actions }: CardProps) {
             {children}
           </Grid>
           {actions && <Divider dir='x' />}
-          <Stack dir='x' justify='around' gap='item'>
+          <Stack dir='x' gap='item'>
             {actions}
           </Stack>
           <Spacer dir='x' margin='item' />

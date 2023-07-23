@@ -1,16 +1,18 @@
 import classNames from "classnames";
 
-type SpacerProps = {
+type DividerProps = {
   dir: "x" | "y";
   margin?: "none" | "page" | "component" | "item";
 };
 
-function Spacer({ dir = "x", margin = "none" }: SpacerProps) {
+function Divider({ dir = "x", margin = "none" }: DividerProps) {
   return (
     <div
       className={classNames(
         { "w-full h-px": dir === "x" },
-        { "w-px h-4": dir === "y" },
+        "bg-base-300",
+        { "w-px h-full": dir === "y" },
+        "rounded-full",
         { "mx-page": margin === "page" && dir === "y" },
         { "mx-component": margin === "component" && dir === "y" },
         { "mx-item": margin === "item" && dir === "y" },
@@ -22,4 +24,4 @@ function Spacer({ dir = "x", margin = "none" }: SpacerProps) {
   );
 }
 
-export default Spacer;
+export default Divider;

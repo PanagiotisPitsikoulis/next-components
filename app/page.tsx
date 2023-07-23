@@ -1,6 +1,6 @@
-import Label from "@/components/highLevel/label/Label";
+import Label from "@/components/highLevel/Label/Label";
 import Navbar from "@/components/templates/layout/Navbar";
-import Card from "@/components/highLevel/card/Card";
+import Card from "@/components/highLevel/Card";
 
 export default function Home() {
   return (

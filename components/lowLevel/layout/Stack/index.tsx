@@ -5,23 +5,13 @@ type StackProps = {
   children: ReactNode;
   dir?: "x" | "y";
   gap?: "page" | "component" | "item";
-  justify?: "between" | "around" | "center";
 };
 
-function Stack({
-  children,
-  dir = "x",
-  gap = "component",
-  justify,
-}: StackProps) {
+function Stack({ children, dir = "x", gap = "component" }: StackProps) {
   return (
     <div
       className={classNames(
         "flex",
-        "items-center",
-        { "justify-between": justify === "between" },
-        { "justify-around": justify === "around" },
-        { "justify-center": justify === "center" },
         { "flex-row": dir === "x" },
         { "flex-col": dir === "y" },
         { "gap-page": gap === "page" },

@@ -1,8 +1,6 @@
 import React, { ReactNode } from "react";
 import classNames from "classnames";
-import Container from "@/components/lowLevel/ui/Container";
-import Stack from "@/components/lowLevel/layout/Stack";
-import Divider from "@/components/lowLevel/ui/Divider";
+import { Container, Stack, Divider } from "../../lowLevel";
 
 type LabelProps = {
   children: ReactNode;

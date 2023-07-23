@@ -17,7 +17,12 @@
     "postcss.config.js": true,
     "README.md": true,
     "tsconfig.json": true,
-    "app/favicon.ico": true
+    "app/favicon.ico": true,
+    "node_modules": true,
+    ".next": true,
+    ".storybook": true,
+    "app": true,
+    "previewConfig.json": true
   },
   "hide-files.files": [
     ".vscode",
@@ -31,7 +36,12 @@
     "postcss.config.js",
     "README.md",
     "tsconfig.json",
-    "app/favicon.ico"
+    "app/favicon.ico",
+    "node_modules",
+    ".next",
+    ".storybook",
+    "app",
+    "previewConfig.json"
   ],
   "cSpell.ignoreWords": ["autodocs"],
   "cSpell.words": ["nextjs"]

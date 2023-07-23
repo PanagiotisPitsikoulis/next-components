@@ -1,7 +1,7 @@
 import classNames from "classnames";
 
 type DividerProps = {
-  dir: "x" | "y";
+  dir?: "x" | "y";
   margin?: "none" | "page" | "component" | "item";
 };
 
