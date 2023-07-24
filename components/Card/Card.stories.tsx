@@ -17,7 +17,8 @@ export const Default: Story = {
   },
   render: ({ size, imageVisible, borderVisible }) => (
     <Card size={size} imageVisible={imageVisible} borderVisible={borderVisible}>
-      <p>Hello World</p>
+      <p>Card title</p>
+      <p>This is a card description</p>
     </Card>
   ),
 };

@@ -11,7 +11,8 @@ function Stack({ children, dir = "x", gap = "component" }: StackProps) {
         { "flex-col": dir === "y" },
         { "gap-page": gap === "page" },
         { "gap-component": gap === "component" },
-        { "gap-item": gap === "item" }
+        { "gap-item": gap === "item" },
+        { "gap-0": gap === "none" }
       )}
     >
       {children}

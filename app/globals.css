@@ -5,3 +5,11 @@
 body {
   @apply bg-base-100 text-normal;
 }
+
+::-webkit-scrollbar {
+  @apply h-1 bg-base-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-base-300 rounded-outer;
+}

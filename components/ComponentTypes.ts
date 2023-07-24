@@ -47,8 +47,7 @@ export type ContainerProps = {
 };
 
 export type CardProps = {
-  children: ReactNode;
-  actions?: ReactNode;
+  children: [ReactNode, ReactNode];
   size: Size;
   imageVisible?: boolean;
   borderVisible?: boolean;

@@ -1,11 +1,10 @@
 import React, { ReactNode } from "react";
 import clsx from "clsx";
-import { Grid, Spacer, Stack, Divider, Container } from "..";
+import { TextBox, Spacer, Stack, Divider, Container } from "..";
 import { CardProps } from "../ComponentTypes";
 
-function Label({
+function Card({
   children,
-  actions,
   size,
   imageVisible = true,
   borderVisible = true,
@@ -21,7 +20,8 @@ function Label({
         { "text-muted": true },
         { [cardSmall]: size === "sm" },
         { [cardMedium]: size === "md" },
-        { [cardLarge]: size === "lg" }
+        { [cardLarge]: size === "lg" },
+        { "shrink-0": true }
       )}
     >
       <Container borderVisible={borderVisible}>
@@ -37,13 +37,9 @@ function Label({
               )}
             ></div>
           )}
-          <Grid dimX={2} dimY={2} padding='component'>
-            {children}
-          </Grid>
-          {actions && <Divider size={"sm"} dir='x' />}
-          <Stack dir='x' gap='item'>
-            {actions}
-          </Stack>
+          <div className='px-component'>
+            <TextBox>{children}</TextBox>
+          </div>
           <Spacer dir='x' margin='item' />
         </Stack>
       </Container>
@@ -51,4 +47,4 @@ function Label({
   );
 }
 
-export default Label;
+export default Card;
