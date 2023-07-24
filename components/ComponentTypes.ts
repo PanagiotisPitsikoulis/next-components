@@ -64,3 +64,12 @@ export type ToggleProps = {
   activeChild: 0 | 1;
   borderVisible?: boolean;
 };
+
+export type ScrollListProps = {
+  children: ReactNode;
+};
+
+export type TextBoxProps = {
+  children: [ReactNode, ReactNode];
+  prominent?: boolean;
+};
