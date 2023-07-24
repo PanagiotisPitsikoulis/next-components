@@ -10,9 +10,13 @@ export default meta;
 type Story = StoryObj<typeof Card>;
 
 export const Default: Story = {
-  args: {},
-  render: ({}) => (
-    <Card>
+  args: {
+    size: "md",
+    imageVisible: true,
+    borderVisible: true,
+  },
+  render: ({ size, imageVisible, borderVisible }) => (
+    <Card size={size} imageVisible={imageVisible} borderVisible={borderVisible}>
       <p>Hello World</p>
     </Card>
   ),

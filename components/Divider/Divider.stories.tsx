@@ -12,10 +12,11 @@ type Story = StoryObj<typeof Divider>;
 export const Default: Story = {
   args: {
     dir: "y",
+    size: "md",
   },
-  render: ({ dir }) => (
+  render: ({ dir, size }) => (
     <div className='w-96 h-96 flex justify-center items-center'>
-      <Divider dir={dir}></Divider>
+      <Divider dir={dir} size={size}></Divider>
     </div>
   ),
 };

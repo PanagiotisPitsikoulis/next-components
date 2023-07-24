@@ -12,9 +12,10 @@ type Story = StoryObj<typeof Container>;
 export const Default: Story = {
   args: {
     padding: "component",
+    center: false,
   },
-  render: ({ padding }) => (
-    <Container padding={padding}>
+  render: ({ padding, center }) => (
+    <Container padding={padding} center={center}>
       <p>Hello world</p>
     </Container>
   ),

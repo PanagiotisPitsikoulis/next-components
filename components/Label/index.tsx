@@ -9,7 +9,7 @@ function Label({ children, divider, borderVisible }: LabelProps) {
       <Container padding='item' borderVisible={borderVisible}>
         <Stack gap='item' dir='x'>
           <div className={clsx("text-normal", {})}>{children[0]}</div>
-          {divider && <Divider margin='item' dir='y' />}
+          {divider && <Divider margin='item' size={"sm"} dir='y' />}
           <div className={clsx("text-muted", {})}>{children[1]}</div>
         </Stack>
       </Container>

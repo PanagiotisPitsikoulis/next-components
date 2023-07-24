@@ -1,7 +1,11 @@
 import { ReactNode } from "react";
 
 type Spacing = "none" | "page" | "component" | "item";
+
+type Size = "sm" | "md" | "lg";
+
 type Variant = "primary" | "secondary" | "tertiary";
+
 type Direction = "x" | "y";
 
 export type StackProps = {
@@ -32,20 +36,31 @@ export type GridProps = {
 export type DividerProps = {
   dir: Direction;
   margin?: Spacing;
+  size: Size;
 };
 
 export type ContainerProps = {
   children: ReactNode;
   padding?: Spacing;
   borderVisible?: boolean;
+  center?: boolean;
 };
 
 export type CardProps = {
   children: ReactNode;
   actions?: ReactNode;
+  size: Size;
+  imageVisible?: boolean;
+  borderVisible?: boolean;
 };
 
 export type ButtonProps = {
   children: [ReactNode, ReactNode];
   variant?: Variant;
+};
+
+export type ToggleProps = {
+  children: [ReactNode, ReactNode];
+  activeChild: 0 | 1;
+  borderVisible?: boolean;
 };

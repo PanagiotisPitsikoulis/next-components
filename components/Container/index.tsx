@@ -6,13 +6,15 @@ const Container = ({
   children,
   padding,
   borderVisible = true,
+  center,
 }: ContainerProps) => {
   return (
     <div
       className={clsx(
         { border: borderVisible },
         "rounded-outer",
-        "border-base-300"
+        "border-base-300",
+        { "flex justify-center items-center": center }
       )}
     >
       <div
