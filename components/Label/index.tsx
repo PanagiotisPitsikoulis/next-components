@@ -3,13 +3,13 @@ import clsx from "clsx";
 import { Container, Stack, Divider } from "..";
 import { LabelProps } from "../ComponentTypes";
 
-function Label({ children }: LabelProps) {
+function Label({ children, divider, borderVisible }: LabelProps) {
   return (
     <div className={clsx("text-xs select-none group")}>
-      <Container padding='item'>
-        <Stack gap='item'>
+      <Container padding='item' borderVisible={borderVisible}>
+        <Stack gap='item' dir='x'>
           <div className={clsx("text-normal", {})}>{children[0]}</div>
-          <Divider dir='y' margin='item' />
+          {divider && <Divider margin='item' dir='y' />}
           <div className={clsx("text-muted", {})}>{children[1]}</div>
         </Stack>
       </Container>

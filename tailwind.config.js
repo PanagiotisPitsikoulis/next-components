@@ -25,7 +25,7 @@ module.exports = {
       spacing: {
         page: "3rem",
         component: "1.2rem",
-        item: "0.6rem",
+        item: "0.5rem",
       },
       colors: {
         primary: "#67e8f9",

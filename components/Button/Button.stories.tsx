@@ -13,8 +13,8 @@ export const Default: Story = {
   args: {},
   render: ({ variant }) => (
     <Button variant={variant}>
+      <div>👉</div>
       <div>Click me!</div>
-      <div className='px-1'>:)</div>
     </Button>
   ),
 };
@@ -23,8 +23,8 @@ export const Primary: Story = {
   args: { variant: "primary" },
   render: ({ variant }) => (
     <Button variant={variant}>
+      <div>👉</div>
       <div>Click me!</div>
-      <div className='px-1'>:)</div>
     </Button>
   ),
 };
@@ -33,8 +33,8 @@ export const Secondary: Story = {
   args: { variant: "secondary" },
   render: ({ variant }) => (
     <Button variant={variant}>
+      <div>👉</div>
       <div>Click me!</div>
-      <div className='px-1'>:)</div>
     </Button>
   ),
 };
@@ -43,8 +43,8 @@ export const Tertiary: Story = {
   args: { variant: "tertiary" },
   render: ({ variant }) => (
     <Button variant={variant}>
+      <div>👉</div>
       <div>Click me!</div>
-      <div className='px-1'>:)</div>
     </Button>
   ),
 };

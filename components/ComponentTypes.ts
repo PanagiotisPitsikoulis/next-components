@@ -17,12 +17,14 @@ export type SpacerProps = {
 
 export type LabelProps = {
   children: [ReactNode, ReactNode];
+  divider?: boolean;
+  borderVisible?: boolean;
 };
 
 export type GridProps = {
   children: ReactNode;
-  dimX?: 1 | 2 | 3 | 4;
-  dimY?: 1 | 2 | 3 | 4;
+  dimX?: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
+  dimY?: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
   gap?: Spacing;
   padding?: Spacing;
 };

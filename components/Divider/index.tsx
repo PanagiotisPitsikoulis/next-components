@@ -6,15 +6,11 @@ function Divider({ dir = "x", margin = "none" }: DividerProps) {
     <div
       className={clsx(
         { "w-full h-px": dir === "x" },
+        { "h-4 w-px": dir === "y" },
+        { [`mx-${margin}`]: dir === "y" },
+        { [`my-${margin}`]: dir === "x" },
         "bg-base-300",
-        { "w-px h-full": dir === "y" },
-        "rounded-full",
-        { "mx-page": margin === "page" && dir === "y" },
-        { "mx-component": margin === "component" && dir === "y" },
-        { "mx-item": margin === "item" && dir === "y" },
-        { "my-page": margin === "page" && dir === "x" },
-        { "my-component": margin === "component" && dir === "x" },
-        { "my-item": margin === "item" && dir === "x" }
+        "rounded-full"
       )}
     ></div>
   );
