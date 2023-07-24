@@ -8,21 +8,13 @@ function Card({
   size,
   imageVisible = true,
   borderVisible = true,
-  orientation = "y",
 }: CardProps) {
-  const cardSmall = clsx("w-[10rem]");
-  const cardMedium = clsx("w-md");
-  const cardLarge = clsx("w-lg");
-
   return (
     <div
       className={clsx(
-        { "text-xs": true },
-        { "text-muted": true },
-        { [cardSmall]: size === "sm" },
-        { [cardMedium]: size === "md" },
-        { [cardLarge]: size === "lg" },
-        { "shrink-0": true }
+        { "w-36": size === "sm" },
+        { "w-48": size === "md" },
+        "shrink-0"
       )}
     >
       <Container borderVisible={borderVisible}>
@@ -31,15 +23,16 @@ function Card({
             <div
               className={clsx(
                 "bg-base-200",
-                { "aspect-square": orientation === "y" },
-                { "aspect-video": orientation === "x" },
+                "w-full",
+                { "h-36": size === "sm" },
+                { "h-72": size === "md" },
                 { "rounded-t-inner": borderVisible },
                 { "rounded-inner": !borderVisible }
               )}
             ></div>
           )}
           {!imageVisible && <Spacer dir='x' margin='item' />}
-          <div className='px-component'>
+          <div className='px-item'>
             <TextBox>{children}</TextBox>
           </div>
           <Spacer dir='x' margin='item' />

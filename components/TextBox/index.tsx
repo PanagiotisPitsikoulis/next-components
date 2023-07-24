@@ -4,7 +4,7 @@ import { TextBoxProps } from "../ComponentTypes";
 function TextBox({ children, prominent = false }: TextBoxProps) {
   return (
     <>
-      <div className={clsx({ "tracking-tighter": true })}>
+      <div>
         <div
           className={clsx(
             { "text-2xl text-focus": prominent },

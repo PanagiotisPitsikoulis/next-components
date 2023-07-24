@@ -12,7 +12,7 @@ const Container = ({
     <div
       className={clsx(
         { border: borderVisible },
-        "rounded-outer",
+        "rounded-outer rounded-t-[0.46rem]",
         "border-base-300",
         { "flex justify-center items-center": center }
       )}

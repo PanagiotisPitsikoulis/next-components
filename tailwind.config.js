@@ -18,9 +18,9 @@ module.exports = {
         muted: "#a3a3a3",
       },
       borderRadius: {
-        outer: "0.75rem",
-        inner: "0.5rem",
-        item: "0.375rem",
+        outer: "0.65rem",
+        inner: "0.4rem",
+        item: "0.15rem",
       },
       spacing: {
         page: "12rem",

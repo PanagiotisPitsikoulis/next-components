@@ -2,8 +2,6 @@ import { ReactNode } from "react";
 
 type Spacing = "none" | "page" | "component" | "item";
 
-type Size = "sm" | "md" | "lg";
-
 type Variant = "primary" | "secondary" | "tertiary";
 
 type Direction = "x" | "y";
@@ -36,7 +34,7 @@ export type GridProps = {
 export type DividerProps = {
   dir: Direction;
   margin?: Spacing;
-  size: Size;
+  size: "sm" | "md" | "lg" | "full";
 };
 
 export type ContainerProps = {
@@ -48,10 +46,9 @@ export type ContainerProps = {
 
 export type CardProps = {
   children: [ReactNode, ReactNode];
-  size: Size;
+  size: "sm" | "md";
   imageVisible?: boolean;
   borderVisible?: boolean;
-  orientation?: "x" | "y";
 };
 
 export type ButtonProps = {
@@ -67,6 +64,9 @@ export type ToggleProps = {
 
 export type ScrollListProps = {
   children: ReactNode;
+  size: "sm" | "md";
+  title: string;
+  description: string;
 };
 
 export type TextBoxProps = {
