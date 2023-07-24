@@ -51,6 +51,7 @@ export type CardProps = {
   size: Size;
   imageVisible?: boolean;
   borderVisible?: boolean;
+  orientation?: "x" | "y";
 };
 
 export type ButtonProps = {

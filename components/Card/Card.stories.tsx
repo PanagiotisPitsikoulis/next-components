@@ -14,9 +14,15 @@ export const Default: Story = {
     size: "md",
     imageVisible: true,
     borderVisible: true,
+    orientation: "y",
   },
-  render: ({ size, imageVisible, borderVisible }) => (
-    <Card size={size} imageVisible={imageVisible} borderVisible={borderVisible}>
+  render: ({ size, imageVisible, borderVisible, orientation }) => (
+    <Card
+      size={size}
+      imageVisible={imageVisible}
+      borderVisible={borderVisible}
+      orientation={orientation}
+    >
       <p>Card title</p>
       <p>This is a card description</p>
     </Card>

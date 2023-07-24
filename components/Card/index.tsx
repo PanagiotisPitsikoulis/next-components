@@ -8,10 +8,11 @@ function Card({
   size,
   imageVisible = true,
   borderVisible = true,
+  orientation = "y",
 }: CardProps) {
-  const cardSmall = clsx("h-sm w-md");
-  const cardMedium = clsx("h-md w-lg");
-  const cardLarge = clsx("h-lg w-[40rem]");
+  const cardSmall = clsx("w-[10rem]");
+  const cardMedium = clsx("w-md");
+  const cardLarge = clsx("w-lg");
 
   return (
     <div
@@ -30,13 +31,14 @@ function Card({
             <div
               className={clsx(
                 "bg-base-200",
-                "w-full",
-                "aspect-video",
+                { "aspect-square": orientation === "y" },
+                { "aspect-video": orientation === "x" },
                 { "rounded-t-inner": borderVisible },
                 { "rounded-inner": !borderVisible }
               )}
             ></div>
           )}
+          {!imageVisible && <Spacer dir='x' margin='item' />}
           <div className='px-component'>
             <TextBox>{children}</TextBox>
           </div>
