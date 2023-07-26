@@ -4,6 +4,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 const meta: Meta<typeof Card> = {
   component: Card,
+  title: "High level/UI/Card",
 };
 
 export default meta;

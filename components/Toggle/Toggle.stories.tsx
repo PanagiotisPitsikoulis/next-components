@@ -4,6 +4,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 const meta: Meta<typeof Toggle> = {
   component: Toggle,
+  title: "Low Level/UI/Toggle",
 };
 
 export default meta;

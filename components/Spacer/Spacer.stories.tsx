@@ -4,6 +4,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 const meta: Meta<typeof Spacer> = {
   component: Spacer,
+  title: "Low Level/Layout/Spacer",
 };
 
 export default meta;

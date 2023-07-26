@@ -4,6 +4,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 const meta: Meta<typeof Stack> = {
   component: Stack,
+  title: "Low Level/Layout/Stack",
 };
 
 export default meta;

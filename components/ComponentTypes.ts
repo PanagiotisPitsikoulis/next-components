@@ -73,3 +73,8 @@ export type TextBoxProps = {
   children: [ReactNode, ReactNode];
   prominent?: boolean;
 };
+
+export type ListProps = {
+  children: ReactNode;
+  title: string;
+};

@@ -4,6 +4,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 const meta: Meta<typeof Label> = {
   component: Label,
+  title: "Low level/UI/Label",
 };
 
 export default meta;

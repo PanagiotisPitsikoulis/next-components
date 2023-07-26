@@ -10,6 +10,6 @@ body {
   @apply h-1 bg-base-100;
 }
 
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb .scrollbar-custom {
   @apply bg-base-300 rounded-outer;
 }

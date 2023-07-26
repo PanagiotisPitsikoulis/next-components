@@ -4,6 +4,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 const meta: Meta<typeof Grid> = {
   component: Grid,
+  title: "Low Level/Layout/Grid",
 };
 
 export default meta;

@@ -4,6 +4,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 const meta: Meta<typeof Divider> = {
   component: Divider,
+  title: "Low Level/UI/Divider",
 };
 
 export default meta;

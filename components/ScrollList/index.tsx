@@ -13,7 +13,7 @@ function ScrollList({ children, size, title, description }: ScrollListProps) {
         <Divider dir='x' size='lg' />
         <div
           className={clsx(
-            "flex flex-row gap-5 overflow-x-scroll",
+            "flex flex-row gap-5 overflow-x-scroll scrollbar-custom",
             { "h-60": size === "sm" },
             { "h-96": size === "md" },
             "w-lg"

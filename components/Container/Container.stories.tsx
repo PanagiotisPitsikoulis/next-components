@@ -4,6 +4,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 const meta: Meta<typeof Container> = {
   component: Container,
+  title: "Low level/Layout/Container",
 };
 
 export default meta;

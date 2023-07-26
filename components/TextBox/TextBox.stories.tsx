@@ -4,6 +4,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 const meta: Meta<typeof TextBox> = {
   component: TextBox,
+  title: "High level/UI/TextBox",
 };
 
 export default meta;
