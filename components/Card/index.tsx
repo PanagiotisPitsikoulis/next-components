@@ -1,7 +1,6 @@
 import React, { ReactNode } from "react";
 import clsx from "clsx";
 import { TextBox, Spacer, Stack, Divider, Container } from "..";
-import { CardProps } from "../ComponentTypes";
 
 function Card({
   children,

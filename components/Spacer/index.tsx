@@ -1,5 +1,4 @@
 import clsx from "clsx";
-import { SpacerProps } from "../ComponentTypes";
 
 function Spacer({ dir = "x", margin = "none" }: SpacerProps) {
   const marginNone = clsx("m-0");

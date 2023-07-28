@@ -15,9 +15,15 @@
     "package-lock.json": true,
     "postcss.config.js": true,
     "README.md": true,
-    "tsconfig.json": true,
     "app/favicon.ico": true,
-    "previewConfig.json": true
+    "previewConfig.json": true,
+    "node_modules": true,
+    "tsconfig.json": true,
+    "tailwind.config.js": true,
+    "package.json": true,
+    "app": true,
+    ".next": true,
+    ".storybook": true
   },
   "hide-files.files": [
     ".vscode",
@@ -29,9 +35,15 @@
     "package-lock.json",
     "postcss.config.js",
     "README.md",
-    "tsconfig.json",
     "app/favicon.ico",
-    "previewConfig.json"
+    "previewConfig.json",
+    "node_modules",
+    "tsconfig.json",
+    "tailwind.config.js",
+    "package.json",
+    "app",
+    ".next",
+    ".storybook"
   ],
   "cSpell.ignoreWords": ["autodocs"],
   "cSpell.words": ["clsx", "nextjs", "tailwindcss"]

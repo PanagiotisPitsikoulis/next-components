@@ -1,33 +1,32 @@
 import React, { ReactNode } from "react";
 import clsx from "clsx";
 import { Label } from "..";
-import { ButtonProps } from "../ComponentTypes";
 
 function Button({ children, variant = "primary" }: ButtonProps) {
   return (
-    <>
+    <div>
       {variant === "primary" && (
-        <button className='ease-in-out hover:bg-base-200/70 bg-base-200 rounded-outer transition:all'>
+        <button className='rounded-inner transition:all bg-base-200 hover:bg-base-200/70 ease-in-out'>
           <Label borderVisible={true} divider={true}>
             {children}
           </Label>
         </button>
       )}
       {variant === "secondary" && (
-        <button className='ease-in-out hover:bg-base-200/70 rounded-outer transition:all'>
-          <Label borderVisible={true} divider={true}>
-            {children}
-          </Label>
-        </button>
-      )}
-      {variant === "tertiary" && (
-        <button className='ease-in-out hover:bg-base-200 rounded-outer transition:all'>
+        <button className='rounded-inner transition:all bg-base-100 hover:bg-base-100/70 ease-in-out'>
           <Label borderVisible={false} divider={false}>
             {children}
           </Label>
         </button>
       )}
-    </>
+      {variant === "tertiary" && (
+        <button className='rounded-inner transition:all bg-base-200 hover:bg-base-100/30 text-muted hover:text-normal ease-in-out'>
+          <Label borderVisible={false} divider={false}>
+            {children}
+          </Label>
+        </button>
+      )}
+    </div>
   );
 }
 

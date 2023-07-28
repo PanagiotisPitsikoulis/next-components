@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import React, { ReactNode } from "react";
-import { ContainerProps } from "../ComponentTypes";
 
 const Container = ({
   children,
@@ -19,7 +18,7 @@ const Container = ({
     >
       <div
         className={clsx(
-          { "p-component": padding === "component" },
+          { "px-component py-item": padding === "component" },
           { "p-page": padding === "page" },
           { "p-item": padding === "item" }
         )}

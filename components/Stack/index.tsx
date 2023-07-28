@@ -1,12 +1,18 @@
 import React, { ReactNode } from "react";
 import clsx from "clsx";
-import { StackProps } from "../ComponentTypes";
 
-function Stack({ children, dir = "x", gap = "component" }: StackProps) {
+function Stack({
+  children,
+  dir = "x",
+  gap = "component",
+  center = false,
+}: StackProps) {
   return (
     <div
       className={clsx(
         "flex",
+        { "items-center": center },
+        { "justify-between": gap === "full" },
         { "flex-row": dir === "x" },
         { "flex-col": dir === "y" },
         { "gap-page": gap === "page" },

@@ -1,5 +1,4 @@
 import clsx from "clsx";
-import { ListProps } from "../ComponentTypes";
 import { Divider, Stack } from "..";
 
 function List({ children, title }: ListProps) {

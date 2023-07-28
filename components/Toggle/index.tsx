@@ -1,5 +1,4 @@
 import clsx from "clsx";
-import { ToggleProps } from "../ComponentTypes";
 import Container from "../Container";
 
 function Toggle({ children, activeChild, borderVisible }: ToggleProps) {

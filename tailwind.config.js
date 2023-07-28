@@ -26,7 +26,7 @@ module.exports = {
         page: "12rem",
         component: "1.2rem",
         item: "0.5rem",
-        sm: "1rem",
+        sm: "1.3rem",
         md: "16rem",
         lg: "32rem",
       },

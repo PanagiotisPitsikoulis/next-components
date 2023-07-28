@@ -1,5 +1,4 @@
 import clsx from "clsx";
-import { TextBoxProps } from "../ComponentTypes";
 
 function TextBox({ children, prominent = false }: TextBoxProps) {
   return (

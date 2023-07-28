@@ -9,6 +9,8 @@ import Stack from "./Stack";
 import Toggle from "./Toggle";
 import TextBox from "./TextBox";
 import ScrollList from "./ScrollList";
+import ButtonGroup from "./ButtonGroup";
+import List from "./List";
 
 export {
   Button,
@@ -22,4 +24,6 @@ export {
   Toggle,
   TextBox,
   ScrollList,
+  List,
+  ButtonGroup,
 };
