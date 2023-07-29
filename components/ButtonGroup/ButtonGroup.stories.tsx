@@ -1,11 +1,8 @@
 import ButtonGroup from ".";
 import React, { ReactNode } from "react";
 import type { Meta, StoryObj } from "@storybook/react";
-import { Button } from "..";
+import { Button, ButtonIcon, ButtonText } from "..";
 import { multiplyChild } from "../../utils/multiplyChild";
-import ButtonIcon from "../Button/ButtonIcon";
-import ButtonText from "../Button/ButtonText";
-
 const meta: Meta<typeof ButtonGroup> = {
   component: ButtonGroup,
   title: "High level/UI/ButtonGroup",

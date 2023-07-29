@@ -1,9 +1,9 @@
 import clsx from "clsx";
 import { Stack } from "..";
 
-function ButtonGroup({ children }: ButtonGroupProps) {
+function ButtonGroup({ children, className }: ButtonGroupProps) {
   return (
-    <>
+    <div className={className}>
       <div
         className={clsx({
           "bg-base-200 p-1.5 rounded-outer w-fit text-sm": true,
@@ -13,7 +13,7 @@ function ButtonGroup({ children }: ButtonGroupProps) {
           {children}
         </Stack>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -2,9 +2,9 @@ import React, { ReactNode } from "react";
 import clsx from "clsx";
 import { Label } from "..";
 
-function Button({ children, variant = "primary" }: ButtonProps) {
+function Button({ children, variant = "primary", className }: ButtonProps) {
   return (
-    <div>
+    <div className={className}>
       {variant === "primary" && (
         <button className='rounded-inner transition:all bg-base-200 hover:bg-base-200/70 ease-in-out'>
           <Label borderVisible={true} divider={true}>

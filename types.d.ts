@@ -14,6 +14,7 @@ declare global {
   // Stack
 
   type StackProps = {
+    className?: string;
     children: ReactNode;
     dir: Direction;
     gap?: Spacing | "full";
@@ -23,6 +24,7 @@ declare global {
   // Spacer
 
   type SpacerProps = {
+    className?: string;
     dir: Direction;
     margin?: Spacing;
   };
@@ -30,6 +32,7 @@ declare global {
   // Label
 
   type LabelProps = {
+    className?: string;
     children: [ReactNode, ReactNode];
     divider?: boolean;
     borderVisible?: boolean;
@@ -38,6 +41,7 @@ declare global {
   // Divider
 
   type DividerProps = {
+    className?: string;
     dir: Direction;
     margin?: Spacing;
     size: "sm" | "md" | "lg" | "full";
@@ -46,6 +50,7 @@ declare global {
   // Container
 
   type ContainerProps = {
+    className?: string;
     children: ReactNode;
     padding?: Spacing;
     borderVisible?: boolean;
@@ -55,6 +60,7 @@ declare global {
   // Card
 
   type CardProps = {
+    className?: string;
     children: [ReactNode, ReactNode];
     size: "sm" | "md";
     imageVisible?: boolean;
@@ -64,27 +70,22 @@ declare global {
   // ButtonGroup
 
   type ButtonGroupProps = {
+    className?: string;
     children: ReactNode;
   };
 
   // Button
 
   type ButtonProps = {
-    children: [ReactElement<ButtonIconProps>, ReactElement<ButtonTextProps>];
+    className?: string;
+    children: [ReactNode, ReactNode];
     variant?: Variant;
-  };
-
-  type ButtonIconProps = {
-    children: ReactNode;
-  };
-
-  type ButtonTextProps = {
-    children: string;
   };
 
   // Toggle
 
   type ToggleProps = {
+    className?: string;
     children: [ReactNode, ReactNode];
     activeChild: 0 | 1;
     borderVisible?: boolean;
@@ -93,6 +94,7 @@ declare global {
   // ScrollList
 
   type ScrollListProps = {
+    className?: string;
     children: ReactNode;
     size: "sm" | "md";
     title: string;
@@ -102,6 +104,7 @@ declare global {
   // TextBox
 
   type TextBoxProps = {
+    className?: string;
     children: [ReactNode<string>, ReactNode<string>];
     prominent: boolean;
   };
@@ -109,6 +112,7 @@ declare global {
   // List
 
   type ListProps = {
+    className?: string;
     children: ReactNode;
     title?: string;
   };
@@ -116,8 +120,39 @@ declare global {
   // Grid
 
   type GridProps = {
+    className?: string;
     children: ReactNode;
     columns: number;
     rows: number;
+  };
+
+  // SidebarProps
+
+  type SidebarProps = {
+    className?: string;
+    children: ReactNode;
+  };
+
+  // NavbarProps
+
+  type NavbarProps = {
+    className?: string;
+    children: ReactNode;
+  };
+
+  // ModalProps
+
+  type ModalProps = {
+    className?: string;
+    children: ReactNode;
+    isOpen: boolean;
+    onClose: () => void;
+  };
+
+  // ListViewProps
+
+  type ListViewProps = {
+    className?: string;
+    children: ReactNode;
   };
 }

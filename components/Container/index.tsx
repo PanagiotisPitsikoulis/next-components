@@ -6,24 +6,27 @@ const Container = ({
   padding,
   borderVisible = true,
   center,
+  className,
 }: ContainerProps) => {
   return (
-    <div
-      className={clsx(
-        { border: borderVisible },
-        "rounded-outer rounded-t-[0.46rem]",
-        "border-base-300",
-        { "flex justify-center items-center": center }
-      )}
-    >
+    <div className={className}>
       <div
         className={clsx(
-          { "px-component py-item": padding === "component" },
-          { "p-page": padding === "page" },
-          { "p-item": padding === "item" }
+          { border: borderVisible },
+          "rounded-outer rounded-t-[0.46rem]",
+          "border-base-300",
+          { "flex justify-center items-center": center }
         )}
       >
-        {children}
+        <div
+          className={clsx(
+            { "px-component py-item": padding === "component" },
+            { "p-page": padding === "page" },
+            { "p-item": padding === "item" }
+          )}
+        >
+          {children}
+        </div>
       </div>
     </div>
   );

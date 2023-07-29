@@ -1,9 +1,15 @@
 import clsx from "clsx";
 import { Divider, TextBox, Stack } from "..";
 
-function ScrollList({ children, size, title, description }: ScrollListProps) {
+function ScrollList({
+  children,
+  size,
+  title,
+  description,
+  className,
+}: ScrollListProps) {
   return (
-    <div>
+    <div className={className}>
       <Stack dir='y' gap='component'>
         <TextBox prominent={size === "md"}>
           <h1>{title}</h1>
@@ -12,7 +18,7 @@ function ScrollList({ children, size, title, description }: ScrollListProps) {
         <Divider dir='x' size='full' />
         <div
           className={clsx(
-            "flex flex-row gap-5 overflow-x-scroll scrollbar-custom",
+            "flex flex-row gap-5 overflow-x-auto scrollbar-custom",
             "w-full",
             "pb-3"
           )}

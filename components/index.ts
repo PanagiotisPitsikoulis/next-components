@@ -11,6 +11,8 @@ import TextBox from "./TextBox";
 import ScrollList from "./ScrollList";
 import ButtonGroup from "./ButtonGroup";
 import List from "./List";
+import Modal from "./Modal";
+import { Navbar, Sidebar, HomePage } from "./Layout";
 
 export {
   Button,
@@ -26,4 +28,8 @@ export {
   ScrollList,
   List,
   ButtonGroup,
+  Navbar,
+  Sidebar,
+  HomePage,
+  Modal,
 };

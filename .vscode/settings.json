@@ -18,12 +18,8 @@
     "app/favicon.ico": true,
     "previewConfig.json": true,
     "node_modules": true,
-    "tsconfig.json": true,
-    "tailwind.config.js": true,
-    "package.json": true,
     "app": true,
-    ".next": true,
-    ".storybook": true
+    ".next": true
   },
   "hide-files.files": [
     ".vscode",
@@ -38,13 +34,9 @@
     "app/favicon.ico",
     "previewConfig.json",
     "node_modules",
-    "tsconfig.json",
-    "tailwind.config.js",
-    "package.json",
     "app",
-    ".next",
-    ".storybook"
+    ".next"
   ],
   "cSpell.ignoreWords": ["autodocs"],
-  "cSpell.words": ["clsx", "nextjs", "tailwindcss"]
+  "cSpell.words": ["clsx", "nextjs", "tailwindcss", "viewports"]
 }

@@ -1,9 +1,9 @@
 import clsx from "clsx";
 
-function Grid({ children }: GridProps) {
+function Grid({ children, className }: GridProps) {
   return (
     <>
-      <div className={clsx({ "": true })}>{children}</div>
+      <div className={clsx({ className })}>{children}</div>
     </>
   );
 }
