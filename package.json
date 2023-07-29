@@ -1,7 +1,7 @@
 {
-  "name": "fitness-tracker",
-  "version": "0.1.0",
-  "private": true,
+  "name": "aegean-ui",
+  "version": "0.0.1",
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -38,5 +38,12 @@
     "@storybook/testing-library": "^0.2.0",
     "eslint-plugin-storybook": "^0.6.13",
     "storybook": "^7.1.0"
-  }
+  },
+  "description": "Immerse yourself in the captivating world of Aegean UI, a stunning React component library that draws inspiration from the tranquil beauty of the Aegean Sea. Powered by Tailwind CSS, Aegean UI empowers you to create breathtaking and responsive user interfaces, reminiscent of the serene Aegean shores. Dive into a sea of creativity as you explore an array of carefully crafted components, including dynamic layouts, intuitive navigation elements, and customizable UI elements. Just as the Aegean Sea weaves tales of elegance and history, Aegean UI weaves an unforgettable experience for your web projects. Let Aegean UI bring a touch of Mediterranean magic to your UI creations.",
+  "main": "src/index.ts",
+  "files": [
+    "src/**/*"
+  ],
+  "author": "Panagiotis Pitsikoulis",
+  "license": "MIT"
 }

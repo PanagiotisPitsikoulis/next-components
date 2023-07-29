@@ -14,10 +14,8 @@
     "next.config.js": true,
     "package-lock.json": true,
     "postcss.config.js": true,
-    "README.md": true,
     "app/favicon.ico": true,
     "previewConfig.json": true,
-    "node_modules": true,
     "app": true,
     ".next": true
   },
@@ -30,13 +28,11 @@
     "next.config.js",
     "package-lock.json",
     "postcss.config.js",
-    "README.md",
     "app/favicon.ico",
     "previewConfig.json",
-    "node_modules",
     "app",
     ".next"
   ],
   "cSpell.ignoreWords": ["autodocs"],
-  "cSpell.words": ["clsx", "nextjs", "tailwindcss", "viewports"]
+  "cSpell.words": ["clsx", "nextjs", "tailwindcss", "viewports", "zustand"]
 }

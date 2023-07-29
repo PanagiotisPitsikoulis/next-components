@@ -1,3 +1,4 @@
+"use client";
 import clsx from "clsx";
 import { Container, TextBox, Divider, Spacer } from "..";
 import React, { useState, useEffect } from "react";
