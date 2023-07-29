@@ -16,7 +16,6 @@
     "postcss.config.js": true,
     "app/favicon.ico": true,
     "previewConfig.json": true,
-    "app": true,
     ".next": true
   },
   "hide-files.files": [
@@ -30,7 +29,6 @@
     "postcss.config.js",
     "app/favicon.ico",
     "previewConfig.json",
-    "app",
     ".next"
   ],
   "cSpell.ignoreWords": ["autodocs"],
