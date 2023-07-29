@@ -1,5 +1,11 @@
 import clsx from "clsx";
 import { List, Divider, TextBox, Button, Stack, Label, Spacer } from "../..";
+import React, { ReactNode } from "react";
+
+type SidebarProps = {
+  className?: string;
+  children: ReactNode;
+};
 
 function Sidebar({ children, className }: SidebarProps) {
   return (

@@ -1,4 +1,11 @@
 import clsx from "clsx";
+import React, { ReactNode } from "react";
+
+type TextBoxProps = {
+  className?: string;
+  children: [ReactNode, ReactNode];
+  prominent: boolean;
+};
 
 function TextBox({ children, prominent = false, className }: TextBoxProps) {
   return (

@@ -1,5 +1,14 @@
 import clsx from "clsx";
 import { Divider, TextBox, Stack } from "..";
+import React, { ReactNode } from "react";
+
+type ScrollListProps = {
+  className?: string;
+  children: ReactNode;
+  size: "sm" | "md";
+  title: string;
+  description: string;
+};
 
 function ScrollList({
   children,

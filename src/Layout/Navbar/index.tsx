@@ -1,5 +1,11 @@
 import clsx from "clsx";
 import { Button, Stack, Spacer, Divider } from "../..";
+import React, { ReactNode } from "react";
+
+type NavbarProps = {
+  className?: string;
+  children: ReactNode;
+};
 
 function Navbar({ children, className }: NavbarProps) {
   return (

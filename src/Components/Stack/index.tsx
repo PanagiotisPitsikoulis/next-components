@@ -1,6 +1,14 @@
 import React, { ReactNode } from "react";
 import clsx from "clsx";
 
+type StackProps = {
+  className?: string;
+  children: ReactNode;
+  dir: "x" | "y";
+  gap?: "none" | "page" | "component" | "item" | "full";
+  center?: Boolean;
+};
+
 function Stack({
   children,
   dir = "x",

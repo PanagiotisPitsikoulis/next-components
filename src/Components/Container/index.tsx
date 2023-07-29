@@ -1,6 +1,14 @@
 import clsx from "clsx";
 import React, { ReactNode } from "react";
 
+type ContainerProps = {
+  className?: string;
+  children: ReactNode;
+  padding?: "none" | "page" | "component" | "item";
+  borderVisible?: boolean;
+  center?: boolean;
+};
+
 const Container = ({
   children,
   padding,

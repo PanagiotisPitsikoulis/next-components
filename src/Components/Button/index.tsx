@@ -2,6 +2,12 @@ import React, { ReactNode } from "react";
 import clsx from "clsx";
 import { Label } from "..";
 
+type ButtonProps = {
+  className?: string;
+  children: [ReactNode, ReactNode];
+  variant?: "primary" | "secondary" | "tertiary";
+};
+
 function Button({ children, variant = "primary", className }: ButtonProps) {
   return (
     <div className={className}>

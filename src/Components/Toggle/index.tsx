@@ -1,5 +1,13 @@
 import clsx from "clsx";
 import Container from "../Container";
+import React, { ReactNode } from "react";
+
+type ToggleProps = {
+  className?: string;
+  children: [ReactNode, ReactNode];
+  activeChild: 0 | 1;
+  borderVisible?: boolean;
+};
 
 function Toggle({
   children,

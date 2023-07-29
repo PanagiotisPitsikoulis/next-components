@@ -2,6 +2,14 @@ import React, { ReactNode } from "react";
 import clsx from "clsx";
 import { TextBox, Spacer, Stack, Divider, Container } from "..";
 
+type CardProps = {
+  className?: string;
+  children: [ReactNode, ReactNode];
+  size: "sm" | "md";
+  imageVisible?: boolean;
+  borderVisible?: boolean;
+};
+
 function Card({
   children,
   size,

@@ -1,5 +1,12 @@
 import clsx from "clsx";
 
+type DividerProps = {
+  className?: string;
+  dir: "x" | "y";
+  margin?: "none" | "page" | "component" | "item";
+  size: "sm" | "md" | "lg" | "full";
+};
+
 function Divider({
   dir = "x",
   margin = "none",

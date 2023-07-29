@@ -1,5 +1,11 @@
 import clsx from "clsx";
 import { Stack } from "..";
+import React, { ReactNode } from "react";
+
+type ButtonGroupProps = {
+  className?: string;
+  children: ReactNode;
+};
 
 function ButtonGroup({ children, className }: ButtonGroupProps) {
   return (

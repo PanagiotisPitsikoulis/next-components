@@ -1,5 +1,12 @@
 import clsx from "clsx";
 import { Divider, Stack } from "..";
+import React, { ReactNode } from "react";
+
+type ListProps = {
+  className?: string;
+  children: ReactNode;
+  title?: string;
+};
 
 function List({ children, title, className }: ListProps) {
   return (

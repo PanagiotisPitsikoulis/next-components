@@ -1,4 +1,12 @@
 import clsx from "clsx";
+import React, { ReactNode } from "react";
+
+type GridProps = {
+  className?: string;
+  children: ReactNode;
+  columns: number;
+  rows: number;
+};
 
 function Grid({ children, className }: GridProps) {
   return (

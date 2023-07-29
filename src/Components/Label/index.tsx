@@ -2,6 +2,13 @@ import React, { ReactNode } from "react";
 import clsx from "clsx";
 import { Container, Stack, Divider } from "..";
 
+type LabelProps = {
+  className?: string;
+  children: [ReactNode, ReactNode];
+  divider?: boolean;
+  borderVisible?: boolean;
+};
+
 function Label({ children, divider, borderVisible, className }: LabelProps) {
   return (
     <div className={className}>
