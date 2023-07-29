@@ -11,8 +11,6 @@ import TextBox from "./TextBox";
 import ScrollList from "./ScrollList";
 import ButtonGroup from "./ButtonGroup";
 import List from "./List";
-import Modal from "./Modal";
-import exp from "constants";
 
 export {
   Button,
@@ -28,5 +26,4 @@ export {
   ScrollList,
   List,
   ButtonGroup,
-  Modal,
 };
