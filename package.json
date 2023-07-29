@@ -45,5 +45,10 @@
   },
   "description": "Immerse yourself in the captivating world of Aegean UI, a stunning React component library that draws inspiration from the tranquil beauty of the Aegean Sea. Powered by Tailwind CSS, Aegean UI empowers you to create breathtaking and responsive user interfaces, reminiscent of the serene Aegean shores. Dive into a sea of creativity as you explore an array of carefully crafted components, including dynamic layouts, intuitive navigation elements, and customizable UI elements. Just as the Aegean Sea weaves tales of elegance and history, Aegean UI weaves an unforgettable experience for your web projects. Let Aegean UI bring a touch of Mediterranean magic to your UI creations.",
   "author": "Panagiotis Pitsikoulis",
-  "license": "MIT"
+  "license": "MIT",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ]
 }
