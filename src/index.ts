@@ -12,7 +12,6 @@ import {
   ScrollList,
   List,
   ButtonGroup,
-  Modal,
 } from "./Components";
 
 import { Navbar, Sidebar, HomePage } from "./Layout";
@@ -37,5 +36,4 @@ export {
   Navbar,
   Sidebar,
   HomePage,
-  Modal,
 };
