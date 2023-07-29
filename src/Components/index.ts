@@ -11,6 +11,7 @@ import TextBox from "./TextBox";
 import ScrollList from "./ScrollList";
 import ButtonGroup from "./ButtonGroup";
 import List from "./List";
+import Modal from "./Modal";
 
 export {
   Button,
@@ -24,6 +25,7 @@ export {
   Toggle,
   TextBox,
   ScrollList,
+  Modal,
   List,
   ButtonGroup,
 };

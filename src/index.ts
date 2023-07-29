@@ -12,6 +12,7 @@ import {
   ScrollList,
   List,
   ButtonGroup,
+  Modal,
 } from "./Components";
 
 import { Navbar, Sidebar, HomePage } from "./Layout";
@@ -20,6 +21,7 @@ import { multiplyChild } from "./utils/multiplyChild";
 import { useComponentHeight } from "./utils/useComponentHeight";
 
 export {
+  Modal,
   Button,
   Card,
   Container,
