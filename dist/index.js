@@ -1644,6 +1644,7 @@ const $1dd950f4be17dc4d$export$62e3bf52ca33cd72 = ({
 const $1dd950f4be17dc4d$export$a7ee2755348786ad = ({
   className: className,
   children: children,
+  title: title,
   ...props
 }) => {
   const [isOpen, setIsOpen] = (0, $1RSLF$react.useState)(true);
@@ -1657,7 +1658,7 @@ const $1dd950f4be17dc4d$export$a7ee2755348786ad = ({
           (0, $70d96f8e258dcaaa$export$c135dce7b15bbbdc),
           {
             className: (0, $7d6bc9fc27a23abe$export$1343a74baacb0543)(
-              "flex flex-row items-center gap-3 pl-3",
+              "flex flex-row items-center gap-3 pl-3 font-semibold text-muted-foreground cursor-pointer hover:text-primary-foreground",
               className
             ),
             children: [
@@ -1675,7 +1676,7 @@ const $1dd950f4be17dc4d$export$a7ee2755348786ad = ({
                     size: 15,
                   }
                 ),
-              children,
+              title,
             ],
           }
         ),
@@ -1685,7 +1686,7 @@ const $1dd950f4be17dc4d$export$a7ee2755348786ad = ({
             children: /*#__PURE__*/ (0, $1RSLF$reactjsxruntime.jsx)(
               $1dd950f4be17dc4d$export$71214b16dbc210d1,
               {
-                ...props,
+                children: children,
               }
             ),
           }
