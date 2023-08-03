@@ -75,7 +75,7 @@ const NavbarMenuItem: React.FC<NavbarMenuItemProps> = ({
 }) => (
   <div
     className={cn(
-      "flex flex-row items-center justify-center px-2 py-2 font-semibold text-muted-foreground cursor-pointer hover:text-primary-foreground hover:bg-secondary/50",
+      "flex flex-row items-center justify-center px-2 py-2 font-semibold text-muted-foreground cursor-pointer hover:text-primary-foreground",
       className,
       active && "text-primary-foreground"
     )}

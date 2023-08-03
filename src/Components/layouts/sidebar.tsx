@@ -23,7 +23,7 @@ const SideBarStyles = cva("h-screen select-none w-[16rem] px-8 py-8", {
     blur: {
       true: "backdrop-filter bg-primary/40 backdrop-blur-xl",
     },
-    fixed: { true: "fixed left-0 top-0 bottom-0" },
+    fixed: { true: "fixed left-0 top-[7rem] bottom-0" },
   },
 });
 
@@ -75,7 +75,7 @@ const SideBarSectionItem: React.FC<SideBarSectionItemProps> = ({
 }) => (
   <div
     className={cn(
-      "font-semibold flex py-1 pr-2 flex-row gap-3 text-muted-foreground cursor-pointer hover:text-primary-foreground hover:bg-secondary/50 my-1 pl-3",
+      "font-semibold flex py-1 pr-2 flex-row gap-3 text-muted-foreground cursor-pointer hover:text-primary-foreground my-1 pl-3",
       className,
       active && "text-primary-foreground"
     )}
@@ -108,6 +108,7 @@ const SideBarCollapsibleSection: React.FC<
 const SideBarCollapsibleItem: React.FC<React.HTMLAttributes<HTMLElement>> = ({
   className,
   children,
+  title,
   ...props
 }) => {
   const [isOpen, setIsOpen] = useState(true);
@@ -118,7 +119,7 @@ const SideBarCollapsibleItem: React.FC<React.HTMLAttributes<HTMLElement>> = ({
       >
         {isOpen && <ChevronDownIcon size={16} />}
         {!isOpen && <ChevronUp size={15} />}
-        {children}
+        {title}
       </CollapsibleTrigger>
       <CollapsibleContent>
         <SideBarSection {...props} />

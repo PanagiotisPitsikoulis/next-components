@@ -5,18 +5,7 @@
     "**/.hg": true,
     "**/CVS": true,
     "**/.DS_Store": true,
-    "**/Thumbs.db": true,
-    ".vscode": true,
-    "public": true,
-    ".eslintrc.json": true,
-    ".gitignore": true,
-    "next-env.d.ts": true,
-    "next.config.js": true,
-    "package-lock.json": true,
-    "postcss.config.js": true,
-    "app/favicon.ico": true,
-    "previewConfig.json": true,
-    ".next": true
+    "**/Thumbs.db": true
   },
   "hide-files.files": [
     ".vscode",
