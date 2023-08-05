@@ -267,8 +267,12 @@ interface ComboboxProps {
     placeholder: string;
     notFound: string;
     className?: string;
+    handleSelect: (value: {
+        value: string;
+        label: string;
+    }) => void;
 }
-export function Combobox({ SearchItems, placeholder, className, notFound, title, }: ComboboxProps): JSX.Element;
+export function Combobox({ SearchItems, placeholder, className, notFound, handleSelect, title, }: ComboboxProps): JSX.Element;
 export const Checkbox: React.ForwardRefExoticComponent<Omit<CheckboxPrimitive.CheckboxProps & React.RefAttributes<HTMLButtonElement>, "ref"> & React.RefAttributes<HTMLButtonElement>>;
 export const ContextMenu: React.FC<ContextMenuPrimitive.ContextMenuProps>;
 export const ContextMenuTrigger: React.ForwardRefExoticComponent<ContextMenuPrimitive.ContextMenuTriggerProps & React.RefAttributes<HTMLSpanElement>>;

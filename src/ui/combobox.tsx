@@ -21,7 +21,7 @@ interface ComboboxProps {
   placeholder: string;
   notFound: string;
   className?: string;
-  handleSelect: (value: string) => void;
+  handleSelect: (value: { value: string; label: string }) => void;
 }
 
 function Combobox({
@@ -56,13 +56,13 @@ function Combobox({
           <CommandInput placeholder={placeholder} />
           <CommandEmpty>{notFound}</CommandEmpty>
           <CommandGroup>
-            {SearchItems.map((SearchItem) => (
+            {SearchItems.map((SearchItem, index) => (
               <CommandItem
                 key={SearchItem.value}
                 onSelect={(currentValue) => {
                   setValue(currentValue === value ? "" : currentValue);
                   setOpen(false);
-                  handleSelect(currentValue);
+                  handleSelect(SearchItem);
                 }}
               >
                 <Check

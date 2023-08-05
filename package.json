@@ -1,13 +1,13 @@
 {
   "name": "aegean-ui",
-  "version": "0.0.34",
+  "version": "0.0.38",
   "main": "dist/index.js",
   "private": false,
   "types": "dist/types.d.ts",
   "scripts": {
     "watch": "parcel watch src/index.ts",
-    "build": "parcel build src/index.ts --no-cache",
-    "handleIndex": "node scripts/handleIndex.js"
+    "build": "parcel build src/index.ts --no-cache && node scripts/useClient.js",
+    "useClient": "node scripts/useClient.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.1.1",
