@@ -1,12 +1,12 @@
 {
   "name": "aegean-ui",
-  "version": "0.3.0",
+  "version": "0.1.0",
   "main": "dist/index.js",
   "private": false,
   "types": "dist/types.d.ts",
   "scripts": {
     "watch": "parcel watch src/index.ts",
-    "build": "parcel build src/index.ts --no-cache && node scripts/useClient.js",
+    "build": "git stash && npm version minor && parcel build src/index.ts --no-cache && node scripts/useClient.js && npm publish && git stash pop",
     "useClient": "node scripts/useClient.js"
   },
   "dependencies": {
