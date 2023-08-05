@@ -1,12 +1,12 @@
 {
   "name": "aegean-ui",
-  "version": "0.0.26",
+  "version": "0.0.34",
   "main": "dist/index.js",
   "private": false,
   "types": "dist/types.d.ts",
   "scripts": {
-    "watch": "parcel watch src/components/index.ts",
-    "build": "parcel build src/components/index.ts --no-cache",
+    "watch": "parcel watch src/index.ts",
+    "build": "parcel build src/index.ts --no-cache",
     "handleIndex": "node scripts/handleIndex.js"
   },
   "dependencies": {
