@@ -1,5 +1,5 @@
 "use client";
-import { ChatBox, ChatView } from "@/components/composed/chat";
+import { ChatBox, ChatView } from "@/components/chat";
 import React from "react";
 
 export default function Home() {
