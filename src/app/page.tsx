@@ -1,4 +1,4 @@
-import { TabsDemo } from "../../dist/";
+import { TabsDemo } from "../../dist";
 import React from "react";
 
 export default async function Home() {
