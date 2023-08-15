@@ -35,7 +35,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "scripts/useClient.js"  ],
   "exclude": [
     "node_modules"
   ]

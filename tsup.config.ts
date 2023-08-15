@@ -2,13 +2,13 @@ import { defineConfig } from "tsup";
 import tsconfig from "./tsconfig.json";
 
 export default defineConfig((options) => ({
-  entry: ["src/components/composed/index.ts"],
+  entry: ["src/components/composed/**/*.ts"],
   dts: true,
   outDir: "dist",
-  name: "aegean-ui",
-  splitting: false,
-  sourcemap: true,
+  format: ["cjs", "esm"],
+  splitting: true,
   clean: true,
-  target: tsconfig.compilerOptions.target as "es2016",
-  minify: false,
+  minify: true,
+  bundle: true,
+  skipNodeModulesBundle: true,
 }));

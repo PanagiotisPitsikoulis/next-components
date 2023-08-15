@@ -9,7 +9,6 @@
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
-    ;
     --popover-foreground: 240 10% 3.9%;
     --primary: 240 5.9% 10%;
     --primary-foreground: 0 0% 98%;
@@ -54,6 +53,7 @@
   * {
     @apply border-border;
   }
+  
   body {
     @apply bg-background text-foreground;
   }
@@ -67,6 +67,14 @@
   @apply px-[2.5rem] md:px-[16rem] lg:px-[18rem] xl:px-[22rem];
 }
 
+.mx-global-x {
+  @apply mx-[2.5rem] md:mx-[16rem] lg:mx-[18rem] xl:mx-[22rem];
+}
+
 .py-global-y {
   @apply py-[3rem];
+}
+
+.my-global-y {
+  @apply my-[3rem];
 }
