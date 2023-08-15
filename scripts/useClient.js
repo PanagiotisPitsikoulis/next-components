@@ -3,7 +3,7 @@ const fs = require("fs");
 const cwd = process.cwd();
 
 function main() {
-const sourceFilePath = cwd + "/dist/index.js";
+const sourceFilePath = cwd + "/components/index.js";
 
 const comment = '"use client";';
 
@@ -26,7 +26,7 @@ fs.readFile(sourceFilePath, "utf8", (err, data) => {
 }
 
 function mainMJS() {
-const sourceFilePath = cwd + "/dist/index.mjs";
+const sourceFilePath = cwd + "/components/index.mjs";
 
 const comment = '"use client";';
 
