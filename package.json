@@ -1,9 +1,8 @@
 {
   "name": "aegean-ui",
-  "version": "0.4.0",
-  "main": "dist/index.js",
+  "version": "0.4.2",
   "private": false,
-  "types": "dist/types.d.ts",
+  "types": "dist/types.js.map",
   "scripts": {
     "dev": "next dev",
     "build-dev": "next build",
