@@ -2,7 +2,7 @@ import { defineConfig } from "tsup";
 import tsconfig from "./tsconfig.json";
 
 export default defineConfig((options) => ({
-  entry: ["src/components/**/*.ts"],
+  entry: ["src/components/**/*.(ts|js|tsx)"],
   dts: true,
   outDir: "dist",
   format: ["cjs", "esm"],
