@@ -7,19 +7,5 @@
     "**/.DS_Store": true,
     "**/Thumbs.db": true
   },
-  "hide-files.files": [
-    ".vscode",
-    "public",
-    ".eslintrc.json",
-    ".gitignore",
-    "next-env.d.ts",
-    "next.config.js",
-    "package-lock.json",
-    "postcss.config.js",
-    "app/favicon.ico",
-    "previewConfig.json",
-    ".next"
-  ],
-  "cSpell.ignoreWords": ["autodocs"],
-  "cSpell.words": ["clsx", "nextjs", "tailwindcss", "viewports", "zustand"]
+  "hide-files.files": []
 }

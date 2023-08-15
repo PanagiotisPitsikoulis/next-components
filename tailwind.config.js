@@ -2,15 +2,15 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
-  ],
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
+	],
   theme: {
     container: {
       center: true,
-      padding: "3rem",
+      padding: "2rem",
       screens: {
         "2xl": "1400px",
       },
@@ -53,8 +53,8 @@ module.exports = {
       },
       borderRadius: {
         lg: "var(--radius)",
-        md: "calc(var(--radius) - 4px)",
-        sm: "calc(var(--radius) - 6px)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
         "accordion-down": {
@@ -72,7 +72,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require("tailwindcss-animate", "@tailwindcss/typography", "@tailwindcss/aspect-ratio"),
-  ],
-};
+  plugins: [require("tailwindcss-animate")],
+}
