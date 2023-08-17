@@ -1,5 +1,5 @@
 "use client";
-import { ChatBox, ChatView } from "@/components/chat";
+import { ChatBox, ChatView } from "@/components/composed/chat";
 import React from "react";
 
 export default function Home() {
@@ -12,17 +12,15 @@ export default function Home() {
   }
 
   return (
-    <main>
-      <div className="flex flex-col gap-10 h-[40vh]">
-        <ChatView chatHistory={chatHistory} />
-        <ChatBox
-          placeholder="Aa"
-          setChatHistory={setChatHistory}
-          chatHistory={chatHistory}
-          blockTillReply={true}
-          fixed={false}
-        />
-      </div>
+    <main className="flex flex-col gap-12">
+      <p className="">hello world</p>
+      <ChatView chatHistory={chatHistory} />
+      <ChatBox
+        placeholder="Aa"
+        setChatHistory={setChatHistory}
+        chatHistory={chatHistory}
+        blockTillReply={true}
+      />
     </main>
   );
 }

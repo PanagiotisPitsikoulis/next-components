@@ -15,7 +15,7 @@
     "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
-    "isolatedModules": false,
+    "isolatedModules": true,
     "jsx": "preserve",
     "incremental": false,
     "sourceMap": true,
@@ -34,8 +34,10 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
-, "scripts/useClient.js"  ],
+    ".next/types/**/*.ts",
+    "scripts/useClient.js",
+    "src/components/tailwindTheme.js"
+  ],
   "exclude": [
     "node_modules"
   ]

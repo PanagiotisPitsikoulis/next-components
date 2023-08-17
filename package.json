@@ -1,10 +1,7 @@
 {
-  "name": "aegean-ui",
-  "version": "0.4.10",
+  "name": "shad-design",
+  "version": "0.0.2",
   "private": false,
-  "main": "components/index.cjs",
-  "module": "components/index.js",
-  "types": "components/index.d.ts",
   "scripts": {
     "dev": "next dev",
     "build-dev": "next build",
@@ -12,7 +9,7 @@
     "lint": "next lint",
     "publish": "npm publish",
     "useClient": "node scripts/useClient.js",
-    "build": "tsup && npm run useClient"
+    "build": "tsup"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.2.0",
@@ -52,6 +49,7 @@
     "react": "^18.2.0",
     "react-day-picker": "^8.8.0",
     "react-hook-form": "^7.45.4",
+    "react-textarea-autosize": "^8.5.2",
     "tailwind-merge": "^1.14.0",
     "tailwindcss-animate": "^1.0.6",
     "zod": "^3.22.0"
