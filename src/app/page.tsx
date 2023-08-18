@@ -1,25 +1,61 @@
-"use client";
-import { ChatBox, ChatView } from "@/components/composed/chat";
 import React from "react";
+import Hero from "@/registry/composed/hero";
+import HeroSection from "@/registry/composed/hero-section";
+import { ActivitySquare, Baseline } from "lucide-react";
+import TextBox from "@/registry/composed/textbox";
 
 export default function Home() {
-  const msg = [{ person: 2, msg: "" }];
-
-  const [chatHistory, setChatHistory] = React.useState(msg);
-
-  function setRecMsg(recMsg: string) {
-    setChatHistory((prev) => [...prev, { person: 2, msg: recMsg }]);
-  }
-
   return (
     <main className="flex flex-col gap-12">
-      <p className="">hello world</p>
-      <ChatView chatHistory={chatHistory} />
-      <ChatBox
-        placeholder="Aa"
-        setChatHistory={setChatHistory}
-        chatHistory={chatHistory}
-        blockTillReply={true}
+      <Hero
+        getStartedText="Get Started Now"
+        githubLink="https://github.com/yourusername"
+        githubText="GitHub Repository"
+        headingText="Welcome to My Website"
+        paragraphText="Explore and learn amazing things on my website."
+        twitterLink="https://twitter.com/yourusername"
+        twitterText="Follow me on Twitter"
+      />
+      <HeroSection
+        headingText="Welcome to My Website"
+        paragraphText="Explore and learn amazing things on my website."
+        features={[
+          {
+            description: "hello",
+            svg: <ActivitySquare />,
+            title: "This is kinda important",
+          },
+          {
+            description: "text",
+            svg: <Baseline />,
+            title: "Imporant kinda",
+          },
+          {
+            description: "hello",
+            svg: <ActivitySquare />,
+            title: "This is kinda important",
+          },
+          {
+            description: "hello",
+            svg: <ActivitySquare />,
+            title: "This is kinda important",
+          },
+          {
+            description: "text",
+            svg: <Baseline />,
+            title: "Imporant kinda",
+          },
+          {
+            description: "hello",
+            svg: <ActivitySquare />,
+            title: "This is kinda important",
+          },
+        ]}
+        stars={5}
+      />
+      <TextBox
+        headingText="Fully opensource"
+        paragraphText="Hello lorem bla bla bla"
       />
     </main>
   );

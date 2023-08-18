@@ -48,15 +48,13 @@
     --ring: 240 4.9% 83.9%;
   }
 }
-/* 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  
-  body {
-    @apply bg-background text-foreground;
-  }
+
+* {
+  @apply border-border;
+}
+
+body {
+  @apply bg-background text-foreground;
 }
 
 .smart-invert {
@@ -64,7 +62,7 @@
 }
 
 .px-global-x {
-  @apply px-[2.5rem] md:px-[16rem] lg:px-[18rem] xl:px-[22rem];
+  @apply px-4 md:px-[16rem] lg:px-[18rem] xl:px-[22rem];
 }
 
 .mx-global-x {
@@ -77,4 +75,4 @@
 
 .my-global-y {
   @apply my-[3rem];
-} */
+}
