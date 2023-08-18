@@ -6,8 +6,9 @@ import TextBox from "@/registry/composed/textbox";
 import componentsArray from "@/registry/default/componentsArray";
 import Link from "next/link";
 import PageGrid from "@/registry/composed/page-grid";
-import { cn } from "@/lib/utils";
 import { Input } from "@/registry/default/ui/input";
+import { Button } from "@/registry/default/ui/button";
+import { DeleteIcon } from "lucide-react";
 
 const componentNames = [
   "Accordion",
@@ -62,6 +63,12 @@ const filteredComponents = componentNames.map((name) => {
 });
 
 export default function Home() {
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const searchFilteredComponents = filteredComponents.filter(({ name }) =>
+    name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <div className="py-global-y">
       <PageGrid
@@ -76,42 +83,62 @@ export default function Home() {
             <div className="my-4" />
             <p className="font-semibold">Components</p>
             {componentNames.map((name, index) => (
-              <Link
-                className={"text-muted-foreground hover:text-foreground"}
+              <p
+                className={
+                  "text-muted-foreground hover:text-foreground select-none"
+                }
                 key={index}
-                href={`/Home/${name}`}
+                onClick={() => setSearchQuery(name)}
               >
                 {name}
-              </Link>
+              </p>
             ))}
           </div>
         }
         menuRight={<></>}
       >
-        <Content />
+        <Content
+          searchQuery={searchQuery}
+          setSearchQuery={setSearchQuery}
+          searchFilteredComponents={searchFilteredComponents}
+        />
       </PageGrid>
     </div>
   );
 }
 
-function Content() {
-  const [searchQuery, setSearchQuery] = useState("");
+interface ContentProps {
+  searchQuery: string;
+  setSearchQuery: (value: string) => void;
+  searchFilteredComponents: typeof filteredComponents;
+}
 
-  const searchFilteredComponents = filteredComponents.filter(({ name }) =>
-    name.toLowerCase().includes(searchQuery.toLowerCase())
-  );
-
+function Content({
+  searchQuery,
+  setSearchQuery,
+  searchFilteredComponents,
+}: ContentProps) {
   return (
     <>
       <div className="flex flex-col w-full gap-5 px-5 bg-background">
         <div>
-          <Input
-            type="text"
-            placeholder="Search components..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="my-2"
-          />
+          <div className="flex flex-row items-center justify-center gap-5">
+            <Input
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="Search component."
+              value={searchQuery}
+              className="py-5 my-3 text-muted-foreground"
+            />
+            {searchQuery !== "" && (
+              <Button
+                onClick={() => {
+                  setSearchQuery("");
+                }}
+              >
+                <DeleteIcon />
+              </Button>
+            )}
+          </div>
           {searchFilteredComponents.map(({ name, components }) => (
             <div key={name} className="my-24">
               <TextBox headingText={name} variant="subtle" center={false} />
