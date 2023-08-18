@@ -1,6 +1,6 @@
 {
   "name": "shad-design",
-  "version": "0.0.3",
+  "version": "0.0.7",
   "private": false,
   "scripts": {
     "dev": "next dev",

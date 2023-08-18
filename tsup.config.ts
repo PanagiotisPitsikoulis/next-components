@@ -3,15 +3,18 @@ import tsconfig from "./tsconfig.json";
 
 export default defineConfig((options) => ({
   entry: [
-    "src/registry/default/ui/**/*.(ts|tsx)",
-    "src/registry/new-york/ui/**/*.(ts|tsx)",
+    "src/default/**/*.(ts|tsx)",
+    "src/lib/**/*.(ts|tsx)",
+    "src/new-york/**/*.(ts|tsx)",
+    "src/mode-toggle/**/*.(ts|tsx)",
   ],
   dts: true,
   outDir: "components",
-  format: ["cjs", "esm"],
+  format: ["esm"],
   splitting: true,
+  treeshake: true,
+  sourcemap: true,
   clean: true,
   minify: true,
   bundle: true,
-  skipNodeModulesBundle: true,
 }));
